@@ -39,6 +39,10 @@ h1,h2, h3, h4, h5, h6 {
 	margin-bottom: 20px;
 }
 
+h4 span {
+	color: #f480d7;	/* pink */
+}
+
 /* ===================================
 2. layout
 ==================================== */
@@ -111,22 +115,33 @@ header .navbar {
 .navbar-brand {
     color: #222;
 	text-transform: uppercase;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
     line-height: 1em;
 	letter-spacing: -1px;
     margin-top: 30px;
+    margin-bottom: 30px;
     padding: 0 0 0 15px;
 }
 
+a.navbar-brand span {
+  color: #f480d7;	/* pink */
+}
+
+a.navbar-brand {
+	color: white !important;
+}
 
 header .navbar-collapse  ul.navbar-nav {
     float: right;
     margin-right: 0;
+    background-color: #206668; /* other blue */
 }
 
 header .navbar-default{
-    background-color: #fff;
+    background-image: url(../img/techandladies_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header .nav li a:hover,
@@ -161,8 +176,8 @@ header .navbar {
 }
 
 header .navbar-nav > li  {
-    padding-bottom: 30px;
-    padding-top: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 header  .navbar-nav > li > a {
@@ -187,18 +202,26 @@ header .nav .caret {
     border-bottom-color: #f5f5f5;
     border-top-color: #f5f5f5;
 }
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  background-color: #fff;
+
 }
+
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   background-color:  #fff;
 }	
-	
 
+/* navbar menu item selected */
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+
+}
+ 
 .dropdown-menu  {
     box-shadow: none;
     border-radius: 0;
@@ -246,23 +269,25 @@ header ul.nav li ul li a {
 
 
 .navbar .nav > li > a {
-  color: #111;
+  color: white;
   text-shadow: none;
 }
 
 .navbar .nav a:hover {
-	background:none;
+	color: #f480d7 !important;	/* pink */
 }
 
 .navbar .nav > .active > a,.navbar .nav > .active > a:hover {
-	background:none;
 	font-weight:700;
+	color: #f480d7 !important;	/* pink */
+	background: none;
 }
 
 .navbar .nav > .active > a:active,.navbar .nav > .active > a:focus {
 	background:none;
 	outline:0;
 	font-weight:700;
+	color: #f480d7 !important;	/* pink */
 }
 
 .navbar .nav li .dropdown-menu {
@@ -351,7 +376,7 @@ section.callaction {
 #content {
 	position:relative;
 	background:#fff;
-	padding:50px 0 40px 0;
+	padding:50px 0 20px 0;
 }
 
 #content img {
@@ -1516,6 +1541,7 @@ ul.time-post li.time{
 ================================ */
 
 footer{
+	background: #206668 !important; /* other blue */
 	padding:50px 0 0 0;
 	color:#f8f8f8;
 }
@@ -1554,8 +1580,9 @@ ul.social-network li {
 	text-shadow:none;
 	color:#f5f5f5;
 	padding:0;
-	padding-top:30px;
+	padding-top:20px;
 	margin:20px 0 0 0;
+	background: #206668 !important; /* other blue */
 }
 
 #sub-footer p{
@@ -1858,6 +1885,7 @@ article img.pull-right, article .align-right{
 	.navbar-header {
 		margin-top: 20px;
 		border-bottom: none;
+		/*background-image: url(../img/techandladies_background.jpg);*/
 	}
 	
 	.navbar-nav {
@@ -1901,6 +1929,7 @@ article img.pull-right, article .align-right{
 	.navbar-collapse.collapse  {
 		border: none;
 		overflow: hidden;
+		background-color: #206668; /* other blue */
 	}
 
 	
@@ -2017,4 +2046,10 @@ article img.pull-right, article .align-right{
         height:auto;
         margin-bottom: 10px;
     }
+}
+
+/** buttons */
+.btn-theme {
+	border: 1px solid #206668 !important; /* other blue */
+	background: #206668 !important; /* other blue */
 }
