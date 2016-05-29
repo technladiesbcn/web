@@ -1783,6 +1783,26 @@ article img.pull-right, article .align-right{
 21. Media queries 
 ============================= */
 
+@media screen and (max-width: 1680px) {
+    
+    .img-techies {
+	   width: 80%;
+	   height:auto;
+       margin-bottom: 10px;
+    }
+}
+    
+
+@media screen and (max-width: 1280px) {
+    
+    .img-techies{
+	   width: 80%;
+	   height:auto;
+       margin-bottom: 10px;
+    }
+    
+}
+
 @media (min-width: 768px) and (max-width: 979px) {
 
 	a.detail{
@@ -1815,6 +1835,14 @@ article img.pull-right, article .align-right{
 		width:156px;
 		margin:0 20px 0 0;
 	}	
+    
+    
+    .img-techies {
+	   width: 30%;
+	   height:auto;
+       margin-bottom: 10px;
+    }
+    
 }
 
 @media (max-width: 767px) {
@@ -1932,6 +1960,12 @@ article img.pull-right, article .align-right{
 	#sub-footer ul.social-network {
 		float:left;
 	}
+    
+    .img-techies {
+	   width: 30%;
+	   height:auto;
+       margin-bottom: 10px;
+    }
 	
 
 	
@@ -1967,10 +2001,20 @@ article img.pull-right, article .align-right{
 		height:20px;
 		font-size:14px;
 	}
+    
+    .img-techies{
+        width: 30%;
+        height:auto;
+        margin-bottom: 10px;
+    }
 
 
 }
 
 @media (max-width: 360px) {
-
+    .img-techies{
+        width: 30%;
+        height:auto;
+        margin-bottom: 10px;
+    }
 }
