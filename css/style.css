@@ -135,6 +135,7 @@ a.navbar-brand {
 header .navbar-collapse  ul.navbar-nav {
     float: right;
     margin-right: 0;
+    margin-top: 80px;
     background-color: #206668; /* other blue */
 }
 
